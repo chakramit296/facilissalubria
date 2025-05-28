@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyCare</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar/Header -->
+    <header>
+      <div class="container nav">
+        <h1 class="logo">EasyCare</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#testimonis">Testimonials</a></li>
+        </ul>
+        <a href="booking.html" class="btn">Book Now</a>
+      </div>
+    </header>
+
+    <!-- God/Hero's Banner -->
+    <section class="hero">
+      <div class="container">
+        <img src="/assets/doc.jpg" alt="Doctor" class="hero-bg" />
+        <h2>Your Health, Our Priority</h2>
+        <p>Consult top doctors. Book lab tests. Get care at home.</p>
+        <br />
+        <a href="booking.html" class="btn">Book Appointment</a>
+      </div>
+    </section>
+
+    <!-- Service Cards -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <img src="icons/doctor.png" alt="Online Consultation" />
+            <h3>Online Consultation</h3>
+            <p>Convenient and assisted healthcare from home</p>
+          </div>
+          <div class="card">
+            <img src="icons/lab.png" alt="Lab Test Booking" />
+            <h3>Lab Test Booking</h3>
+            <p>Experienced and trusted medical professionals</p>
+          </div>
+          <div class="card">
+            <img src="icons/nurse.png" alt="Home Nursing" />
+            <h3>Home Nursing</h3>
+            <p>Affordable and transparent pricing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why & testimonials -->
+    <section class="about-testimonials">
+      <div class="container">
+        <div class="tseparations">
+          <div class="tseparation-card">
+            <h2>Why Choose EasyCare?</h2>
+            <p>✔ Convenient and accessible healthcare from your home</p>
+            <p>✔ Experienced and trusted medical professionals</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonials" id="testimonis">
+              <h2>Testimonials</h2>
+              <div class="testimonial">
+                <p>
+                  <strong>John:</strong> Excellent <em>service!</em> The home
+                  nurse was professional and compassionate.
+                </p>
+                <div class="stars">★★★★★</div>
+              </div>
+              <div class="testimonial">
+                <p>
+                  <strong>Anonymous:</strong> Excellent service! The home nurse
+                  was professional and experienced.
+                </p>
+                <div class="stars">★★★★☆</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- <script src="assets/script.js"></script> -->
+  </body>
+</html>
