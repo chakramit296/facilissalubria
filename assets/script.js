@@ -13,6 +13,7 @@ function includeHTML() {
           el.innerHTML = data;
           el.removeAttribute("include-html");
           includeHTML(); // recursively include nested includes if any
+          initPageScripts(); // re-initialize after each include
         })
         .catch((err) => {
           el.innerHTML = "Include failed.";
@@ -22,9 +23,16 @@ function includeHTML() {
   });
 }
 
-// Run on page load
-document.addEventListener("DOMContentLoaded", () => {
-  includeHTML();
+// Initialization logic
+function initPageScripts() {
+  // Header scroll transparency
+  const header = document.querySelector("header");
+  if (header) {
+    window.addEventListener("scroll", () => {
+      const opacity = Math.min(window.scrollY / 300, 1);
+      header.style.background = `rgba(255, 255, 255, ${opacity})`;
+    });
+  }
 
   // Form validation
   const form = document.querySelector("form");
@@ -51,4 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     });
   }
+}
+
+// Run on page load
+document.addEventListener("DOMContentLoaded", () => {
+  includeHTML();
 });
