@@ -2,7 +2,7 @@
 
 /* Root CSS variables for theme customization */
 :root {
-  --primary: #0e6dfd;
+  --primary: #0a01fc;
   --primary-dark: #2a00b3;
   --text: #333;
   --bg-light: #f9f9f9;
@@ -27,7 +27,7 @@
 }
 
 html {
-  scroll-padding-top: 110px; /* height */
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -46,13 +46,13 @@ body {
 
 /* header style */
 header {
-  background: rgba(255, 255, 255, 0.882);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0);
   position: fixed;
   width: 100%;
   z-index: 10;
   top: 0;
   left: 0;
+  transition: background 0.3s ease;
 }
 
 /* Navigation bar layout */
@@ -141,6 +141,7 @@ header {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: stretch;
 }
 
 .card,
@@ -152,6 +153,8 @@ header {
   box-shadow: var(--shadow-light);
   text-align: center;
   transition: transform 0.3s ease;
+  flex: 1 1 250px;
+  max-width: 300px;
 }
 
 .card:hover,
@@ -161,7 +164,9 @@ header {
 }
 
 .card img {
-  width: 60px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 
@@ -194,7 +199,7 @@ header {
 }
 
 .testimonial {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .stars {
@@ -230,6 +235,11 @@ header {
     flex-direction: column;
     align-items: center;
   }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+  }
 }
 
 a:focus,
@@ -239,3 +249,5 @@ textarea:focus {
   outline: 2px var(--primary);
   outline-offset: 2px;
 }
+
+/* Header background transition on scroll */
