@@ -5,26 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EasyCare</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
   </head>
   <body>
     <!-- Navigation bar/Header -->
-    <header>
-      <div class="container nav">
-        <h1 class="logo">EasyCare</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="#testimonis">Testimonials</a></li>
-        </ul>
-        <a href="booking.html" class="btn">Book Now</a>
-      </div>
-    </header>
+    <div include-html="assets/header.html"></div>
 
     <!-- God/Hero's Banner -->
     <section class="hero">
       <div class="container">
-        <img src="/assets/doc.jpg" alt="Doctor" class="hero-bg" />
+        <img src="/assets/god.jpg" alt="Doctor" class="hero-bg" />
         <h2>Your Health, Our Priority</h2>
         <p>Consult top doctors. Book lab tests. Get care at home.</p>
         <br />
@@ -66,8 +56,8 @@
             <p>✔ Experienced and trusted medical professionals</p>
           </div>
 
-          <div class="testimonial-card">
-            <div class="testimonials" id="testimonis">
+          <div class="testimonial-card" id="t-card">
+            <div class="testimonials">
               <h2>Testimonials</h2>
               <div class="testimonial">
                 <p>
@@ -106,7 +96,5 @@
         </form>
       </div>
     </section>
-
-    <!-- <script src="assets/script.js"></script> -->
   </body>
 </html>
