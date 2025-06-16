@@ -1,3 +1,4 @@
+/* bstyle.css file */
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -14,6 +15,7 @@ body {
   background: #f9f9f9;
   color: #333;
   padding: 1rem;
+  padding-top: var(--header-height);
   transition: background 0.3s, color 0.3s;
 }
 
