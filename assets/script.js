@@ -1,3 +1,4 @@
+//script.js file
 // HTML include logic
 function includeHTML() {
   const elements = document.querySelectorAll("[include-html]");
