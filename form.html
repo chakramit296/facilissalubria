@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="assets/bstyle.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+    <script src="assets/bscript.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/bcf932865e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div include-html="assets/header.html"></div>
+    <div>
+      <nav>
+        <a href="booking.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <h1>Book an Appointment</h1>
+        <button id="toggle-mode"><i class="fa-solid fa-moon"></i></button>
+      </nav>
+
+      <main>
+        <form id="appointmentForm">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="[Firstname] [Lastname]"
+            maxlength="40"
+            autofocus
+          />
+          <p id="nameFeedback"></p>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter email"
+          />
+          <p id="emailFeedback"></p>
+
+          <label for="phone">Mobile Number:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            required
+            placeholder="xxxxxxxxxx"
+          />
+          <p id="phoneFeedback"></p>
+
+          <label for="datetime">Appointment Date & Time:</label>
+          <input type="datetime-local" id="datetime" name="datetime" required />
+          <p id="datetimeFeedback"></p>
+
+          <label for="service">Service:</label>
+          <select id="service" required>
+            <option value="">-- Select Service --</option>
+            <option value="Consultation">Consultation</option>
+            <option value="Therapy Session">Therapy Session</option>
+            <option value="Health Checkup">Health Checkup</option>
+          </select>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
